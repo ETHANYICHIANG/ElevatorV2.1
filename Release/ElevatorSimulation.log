@@ -1,0 +1,20 @@
+﻿  StdAfx.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  ElevatorSimulation.cpp
+  ElevatorSimulationDlg.cpp
+  VisualBuilding.cpp
+  VisualElevator.cpp
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Elevator.cpp(91): warning C4018: '<': signed/unsigned mismatch
+  VisualFloor.cpp
+  VisualPanel.cpp
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Panel.cpp(22): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Panel.cpp(35): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Panel.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Panel.cpp(68): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Panel.cpp(78): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\coms200\module12\elevatorsimulation\Panel.cpp(87): warning C4018: '<': signed/unsigned mismatch
+  VisualRider.cpp
+  Generating Code...
+  ElevatorSimulation.vcxproj -> C:\Users\Ethan\Dropbox\COMS200\Module12\ElevatorSimulation\.\Release\ElevatorSimulation.exe
+  ElevatorSimulation.vcxproj -> .\Release/ElevatorSimulation.pdb (Full PDB)

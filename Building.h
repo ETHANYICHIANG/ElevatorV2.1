@@ -20,8 +20,8 @@ struct Building
   static bool openDoorToDisembarkRider(int);
   static bool disembarkRider(int); // lab 9
   static bool boardRider(int); // lab 9
-  //static bool waitingForMoreRiders(int); // lab 12
-  //static bool doneWaitingMove(int); // lab 12
+  static bool waitingForMoreRiders(int); // lab 12
+  static bool doneWaitingMove(int); // lab 12
   //static bool moveableMove(int); // lab 14
   //static bool setIdleElevatorInMotion(int); // lab 14
   //static bool sendIdleElevatorToCallingFloor(int); // lab 15

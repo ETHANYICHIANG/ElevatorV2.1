@@ -82,8 +82,8 @@ void Building::action(double arrivalsPerSecond)
     if (openDoorToDisembarkRider(e)) continue; // lab 8
     if (disembarkRider(e)) continue; // lab 9
     if (boardRider(e)) continue; // lab 9
-    //if (waitingForMoreRiders(e)) continue; // lab 12
-    //if (doneWaitingMove(e)) continue; // lab 12
+    if (waitingForMoreRiders(e)) continue; // lab 12
+    if (doneWaitingMove(e)) continue; // lab 12
     //if (moveableMove(e)) continue; // lab 14
     //if (setIdleElevatorInMotion(e)) continue; // lab 15
     //if (sendIdleElevatorToCallingFloor(e)) continue; // lab 15
@@ -122,4 +122,27 @@ bool Building::boardRider(int e) // lab 9
     }
   }
   return false;
+}
+
+bool Building::waitingForMoreRiders(int e) // lab 12
+{
+  if(elevators[e].isIdle())
+  {
+    elevators[e].tickTimer();
+    return elevators[e].timedOut() ? true : false;
+  }
+
+  return false;
+}
+
+bool Building::doneWaitingMove(int e) // lab 12
+{
+  if (elevators[e].isIdle() || elevators[e].timedOut())
+    return false;
+  else
+  {
+    elevators[e].closeDoor();
+    elevators[e].move();
+    return true;
+  }
 }

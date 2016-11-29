@@ -37,7 +37,10 @@ class Elevator
   bool goingUp() const {return direction == UP;}
   bool goingDown() const {return direction == DOWN;}
   int getFloorIndex() const {return atFloorIndex;}
-  unsigned int getNumberOfRiders() const { return riders.size();}
+  unsigned int getNumberOfRiders() const {return riders.size();}
+  bool isIdle() const {return direction == -1 ? true : false;}
+  bool closeDoor();
+  bool move();
 
   // count-down timer before closing door
   void resetTimer() {timer = 3;}

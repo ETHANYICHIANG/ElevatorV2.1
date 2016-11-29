@@ -109,3 +109,32 @@ void Elevator::removeRider()
     }
   }
 }
+
+bool Elevator::closeDoor()
+{
+  if(atFloorIndex == -1) return false;
+  
+  if (this->direction == 1 && !Building::floors[atFloorIndex].hasUpRider())
+    this->panel.clear("UP");
+  else if (this->direction == -1 && !Building::floors[atFloorIndex].hasDownRider())
+    this->panel.clear("DOWN");
+  
+  this->direction = -1;
+  return true;
+}
+
+bool Elevator::move()
+{
+  if(this->direction == 1)
+  {
+    this->location += speed;
+    return true;
+  }
+  else if(this->direction == -1)
+  {
+    this->location -= speed;
+    return true;
+  }
+  else return false;
+
+}
